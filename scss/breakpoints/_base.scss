@@ -1,15 +1,54 @@
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-     color: $talitha-color;
+header.header {
+    background-color: $ducklingyellow;
+}
+
+.nav-wrapper {
+    background-color: $black;
+}
+
+.header {
+    p#logo {
+        margin: 0.4em 0;
+
+        a {
+            display: block;
+            text-indent: -9999px;
+            background-image: url('../logo.png');
+            background-repeat: no-repeat;
+            width: 313px;
+            height: 80px;
+        }
+    }
 }
 
 .nav {
-    li {
+    li.menu-item {
 	a {
 	    &:hover, &:focus {
 		text-decoration: none;
+                background-color: lighten($black, 5%);
                 color: #fff;
 	    }
 	}
-
     }
+
+    li.current-menu-item,
+    li.current_page_item,
+    li.current_page_ancestor {
+	a {
+	    background-color: lighten($black, 10%);
+        }
+    }
+}
+
+img.size-medium {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.wp-caption img.size-medium {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
 }
