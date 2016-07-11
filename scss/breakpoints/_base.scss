@@ -7,17 +7,9 @@ header.header {
 }
 
 .header {
-    p#logo {
-        margin: 0.4em 0;
-
-        a {
-            display: block;
-            text-indent: -9999px;
-            background-image: url('../logo.png');
-            background-repeat: no-repeat;
-            width: 313px;
-            height: 80px;
-        }
+    a.header-image-link {
+        display: block;
+        margin: 1em 0;
     }
 }
 
