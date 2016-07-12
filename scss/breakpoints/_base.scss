@@ -44,3 +44,37 @@ img.size-medium {
     border: 0;
     border-radius: 0;
 }
+
+#container {
+    #burger {
+        background-color: $burger-color;
+    }
+
+    .menu-mobile-container {
+        background-color: $burger-color;
+
+        a.closer {
+            background-color: $burger-accent;
+
+            &:hover {
+                background-color: darken($burger-accent, 5%);
+            }
+        }
+
+        li {
+            border-bottom-color: $burger-accent;
+
+            a {
+                &:hover {
+                    background-color: $burger-accent;
+                }
+            }
+
+            ul {
+                li {
+                    border-top-color: $burger-accent;
+                }
+            }
+        }
+    }
+}
